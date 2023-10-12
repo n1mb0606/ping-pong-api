@@ -17,6 +17,8 @@ type Dto struct {
 type ResponseDto struct {
 	Timestamp int64
 	Code      int
+	Up		  bool
+	Ping	  float64
 }
 
 func GetNewInfluxClient(org string, bucket string, url string, token string) *InfluxClient {
